@@ -1,0 +1,250 @@
+/*body {
+    font-family: 'ArcadeClassic', sans-serif;
+    background: linear-gradient(135deg, #f8b500, #fceabb);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+
+.game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #444;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.game-content {
+    margin: 20px 0;
+}
+
+.emoji-puzzle h2 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.emoji-puzzle p {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.user-input {
+    margin-top: 20px;
+}
+
+.user-input input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-input button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-left: 10px;
+    border: none;
+    background: #f8b500;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-input button:hover {
+    background: #ffa500;
+}
+
+.game-footer {
+    margin-top: 30px;
+}
+
+.game-footer .timer {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.game-footer button {
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.game-footer button:hover {
+    background: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#hint-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}
+*/
+
+/* Reset some default styles */
+body, h1, h2, p, input, button {
+    font-family: 'ArcadeClassic', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arcade Classic', sans-serif; /* Use the imported font */
+    background-color: #1a1a1a; /* Dark background for retro feel */
+    color: #f0e68c; /* Light yellow text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Game container */
+.game-container {
+    background-color: #003366; /* Dark blue background */
+    border: 5px solid #f0e68c; /* Yellow border */
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #f0e68c; /* Yellow */
+    text-shadow: 2px 2px #003366; /* Dark blue shadow */
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Game content styles */
+.game-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.emoji-puzzle {
+    font-size: 3em; /* Larger emoji */
+    margin-bottom: 10px;
+}
+
+.user-input {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #f0e68c; /* Yellow border */
+    border-radius: 5px;
+    width: 70%;
+    margin-right: 10px;
+    background-color: #003366; /* Dark blue background */
+    color: #f0e68c; /* Yellow text */
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1.2em;
+    background-color: #f0e68c; /* Yellow button */
+    color: #003366; /* Dark blue text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffd700; /* Lighter yellow on hover */
+}
+
+/* Footer styles */
+.game-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.timer {
+    font-size: 1.5em;
+}
+
+#hint-text {
+    color: #f0e68c; /* Yellow */
+}
+
+/* Log out link */
+a {
+    color: #f0e68c; /* Yellow */
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.profile-button-container {
+
+    text-align: center; /* Center the button */
+    margin-top: 20px; /* Add some space above the button */
+
+}
+
+
+.profile-button {
+
+    display: inline-block; /* Make the link behave like a button */
+    padding: 10px 20px; /* Add padding for a better look */
+    font-size: 1.2em; /* Increase font size */
+    background-color: #f0e68c; /* Yellow background */
+    color: #003366; /* Dark blue text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+
+.profile-button:hover {
+    background-color: #ffd700; /* Lighter yellow on hover */
+}
