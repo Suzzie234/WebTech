@@ -7,7 +7,7 @@
         
         <title>Escape Room</title>
 
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="assets/css/index.css">
         <link href="https://fonts.cdnfonts.com/css/arcade-classic" rel="stylesheet">
                 
 
@@ -31,7 +31,7 @@
             <div class="content">
               <p class="description">Can you solve the puzzles and escape? 🧩🚪</p>
               <p class="instructions">Click below to begin your adventure!</p>
-              <a href="#" class="start-button">Start Game</a>
+              <a href="signup.php" class="start-button" id= "navigateButton">Start Game</a>
             </div>
         
             <!-- Footer -->
@@ -40,7 +40,7 @@
             </footer>
           </div>
         
-          <script src="js/index.js"></script>
+          <script src="assets/js/index.js"></script>
     </body>
 </html>
 
