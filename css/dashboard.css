@@ -1,0 +1,182 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', 'Arcade Classic', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    background: #0f3460;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Header */
+.container h1 {
+    text-align: center;
+    color: #e94560;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-shadow: 0 0 10px rgba(233, 69, 96, 0.8);
+}
+
+/* Feedback Message */
+.feedback {
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #1abc9c;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Form Styling */
+.user-form, form {
+    margin: 20px 0;
+}
+
+.user-form h2 {
+    color: #00cec9;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.user-form input,
+.user-form select,
+form input,
+form select,
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+/* Input Fields */
+input,
+select {
+    background: #16213e;
+    color: #ffffff;
+    border: 1px solid #0f3460;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #00cec9;
+    box-shadow: 0 0 5px #00cec9;
+}
+
+/* Buttons */
+button {
+    background: #e94560;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: #ff6b81;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff6b81;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #16213e;
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+table thead {
+    background: #00cec9;
+    color: #000000;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+table th,
+table td {
+    text-align: left;
+    padding: 10px 15px;
+}
+
+table tbody tr:nth-child(odd) {
+    background: #1a1a2e;
+}
+
+table tbody tr:nth-child(even) {
+    background: #0f3460;
+}
+
+table tbody tr:hover {
+    background: #e94560;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+table tbody td button {
+    padding: 5px 10px;
+    background: #1abc9c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+
+table tbody td button:hover {
+    background: #16a085;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    table th,
+    table td {
+        font-size: 0.8rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+    }
+}
