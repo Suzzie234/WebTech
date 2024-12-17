@@ -1,0 +1,65 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', 'Arcade Classic', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.completion-container {
+    max-width: 600px;
+    width: 100%;
+    background: #1a1a2e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.completion-container h1 {
+    color: #ffe45e; /* Light yellow */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 10px rgba(255, 228, 94, 0.8);
+}
+
+.completion-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.completion-container strong {
+    color: #5bc0f8; /* Light blue */
+    font-size: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #5bc0f8; /* Light blue */
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #45a4d6;
+    transform: scale(1.05);
+}
